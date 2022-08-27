@@ -1,0 +1,22 @@
+{
+  "name": "book-basket-backened-nodejs",
+  "version": "1.0.0",
+  "description": "An application for selling and buying books.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyapsr13/Book-Basket-Backened-NodeJS.git"
+  },
+  "author": "satyapsr13@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyapsr13/Book-Basket-Backened-NodeJS/issues"
+  },
+  "homepage": "https://github.com/satyapsr13/Book-Basket-Backened-NodeJS#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
