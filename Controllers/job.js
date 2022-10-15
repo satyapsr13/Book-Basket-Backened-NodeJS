@@ -1,33 +1,33 @@
 
-const getAllJobs = async (req, res) => {
+const getAllBooks = async (req, res) => {
   res.status(200).json({
-    message: "getAllJobs",
+    message: "getAllBooks",
   });
 };
-const getJob = async (req, res) => {
+const getBook = async (req, res) => {
   res.status(200).json({
-    message: "getJob",
+    message: "getBook",
   });
 };
-const createJob = async (req, res) => {
+const uploadBookToSell = async (req, res) => {
   res.status(200).json({
-    message: "createJob",
+    message: "uploadBookToSell",
   });
 };
-const updateJob = async (req, res) => {
+const updateBook = async (req, res) => {
   res.status(200).json({
-    message: "updateJob",
+    message: "updateBook",
   });
 };
-const deleteJob = async (req, res) => {
+const deleteBook = async (req, res) => {
   res.status(200).json({
-    message: "deleteJob",
+    message: "deleteBook",
   });
 };
 module.exports = {
-  getAllJobs,
-  getJob,
-  createJob,
-  updateJob,
-  deleteJob,
+  getAllBooks,
+  getBook,
+  uploadBookToSell,
+  updateBook,
+  deleteBook,
 };

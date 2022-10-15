@@ -1,15 +1,15 @@
 const express = require("express");
 const {
-  getAllJobs,
-  getJob,
-  createJob,
-  updateJob,
-  deleteJob,
+  getAllBooks,
+  getBook,
+  uploadBookToSell,
+  updateBook,
+  deleteBook,
 } = require("../Controllers/job");
 // const authenticationMiddleware = require("../Middlewares/auth");
 const router = express.Router();
-router.route("/").post(createJob).get(getAllJobs);
-router.route("/:id").get(getJob).put(updateJob).delete(deleteJob);
+router.route("/").post(uploadBookToSell).get(getAllBooks);
+router.route("/:id").get(getBook).put(updateBook).delete(deleteBook);
 
 module.exports = router;
 //
