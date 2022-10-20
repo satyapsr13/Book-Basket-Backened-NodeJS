@@ -27,10 +27,11 @@ const start = async () => {
   }
 };
 app.get("/", (req, res) => {
-  res.send("STORE API");
+  res.send("Book API");
 });
 
-app.use("/api/v1/job/", authenticationMiddleware, bookRouter);
+// app.use("/api/v1/book/", authenticationMiddleware, bookRouter);
+app.use("/api/v1/book/", bookRouter);
 
 // app.use("/api/v1/products/", productRouter);
 app.use("/api/v1/auth/", authRouter);
