@@ -5,13 +5,11 @@ const UserSchema = new mongoose.Schema({
   name: {
     type: String,
   },
+
   email: {
     type: String,
     required: [true, "Email is required"],
-    match: [
-      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-      "Please enter a valid email",
-    ],
+
     unique: true,
   },
   password: {
@@ -43,4 +41,4 @@ const UserSchema = new mongoose.Schema({
   //   admin: Boolean,
   //   location: String,
 });
-module.exports = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("Users", UserSchema);

@@ -8,13 +8,14 @@ const register = async (req, res) => {
   if (!email || !password) {
     // throw new BadRequestError("Please provide name, email and password");
     res.status(400).json({
-      message: "Username and password can not be empty!",
+      message: "Email and password can not be empty!",
       //  user: user,
     });
   }
 
   try {
     const user = new User.create({ ...req.body });
+
 
     res.status(200).json({
       message: "Successfully registered",
