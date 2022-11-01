@@ -1,7 +1,7 @@
 const BadRequestError = require("../Errors/index");
 const jwt = require("jsonwebtoken");
 const User = require("../Model/user");
-const StatusCodes = require("http-status-codes");
+// const StatusCodes = require("http-status-codes");
 const register = async (req, res) => {
   const { email, password } = req.body;
 
