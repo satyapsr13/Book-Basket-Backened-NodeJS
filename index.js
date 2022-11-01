@@ -26,12 +26,13 @@ const start = async () => {
     console.log(error);
   }
 };
+
 app.get("/", (req, res) => {
   res.send("Book API");
 });
 
-// app.use("/api/v1/book/", authenticationMiddleware, bookRouter);
-app.use("/api/v1/book/", bookRouter);
+app.use("/api/v1/book/", authenticationMiddleware, bookRouter);
+// app.use("/api/v1/book/", bookRouter);
 
 // app.use("/api/v1/products/", productRouter);
 app.use("/api/v1/auth/", authRouter);
